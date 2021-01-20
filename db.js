@@ -10,6 +10,6 @@ mongodb.connect(process.env.CONNECTIONSTRING, { useNewUrlParser: true, useUnifie
 
   module.exports = client
   const server = require("./server")
-  //server.listen(process.env.PORT || 5000, console.log("Server started"))
-  server.listen(5000, console.log("Server started"))
+  server.listen(process.env.PORT || 5000, console.log("Server started"))
+  //server.listen(5000, console.log("Server started"))
 })
