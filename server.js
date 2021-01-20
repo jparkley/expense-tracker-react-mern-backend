@@ -6,6 +6,6 @@ const server = express()
 server.use(express.json()) // bodyparser middleware
 dotenv.config()
 
-server.use("/api/v1/transactions", router)
+server.use("/", router)
 
 module.exports = server
