@@ -8,6 +8,6 @@ router.get("/", (req, res) => res.json("Hello, if you see this message, it means
 
 router.get("/api/v1/transactions", getTransactions)
 router.post("/api/v1/transactions", addTransaction)
-router.delete("/:id", deleteTransaction)
+router.delete("/api/v1/transactions/:id", deleteTransaction)
 
 module.exports = router

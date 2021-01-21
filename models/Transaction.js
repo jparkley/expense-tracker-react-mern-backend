@@ -1,5 +1,4 @@
 const { ObjectID } = require("mongodb")
-
 const transactionsCollection = require("../db").db().collection("transactions")
 
 let Transaction = function (data) {
